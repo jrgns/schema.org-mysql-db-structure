@@ -1,10 +1,12 @@
 CREATE TABLE  `things` (
-`id` BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-`name` VARCHAR( 255 ) NOT NULL ,
-`description` TEXT NULL DEFAULT NULL ,
-`url` VARCHAR( 1024 ) NULL DEFAULT NULL ,
-`image` VARCHAR( 1024 ) NULL DEFAULT NULL ,
-INDEX (  `name` )
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `description` text,
+  `url` varchar(1024) DEFAULT NULL,
+  `image` varchar(1024) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `name` (`name`)
 )
 COMMENT='Defined at http://schema.org/Thing'
 ;
+

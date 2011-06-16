@@ -1,13 +1,15 @@
 CREATE TABLE  `organizations` (
-`id` BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-`thing_id` BIGINT NOT NULL ,
-`address_id` BIGINT NULL DEFAULT NULL ,
-`location_id` BIGINT NULL DEFAULT NULL ,
-`email` VARCHAR( 1024 ) NULL DEFAULT NULL ,
-`telephone` VARCHAR( 255 ) NULL DEFAULT NULL ,
-`fax_number` VARCHAR( 255 ) NULL DEFAULT NULL ,
-`interaction_count` VARCHAR( 1024 ) NULL DEFAULT NULL ,
-`founding_date` DATETIME NULL DEFAULT NULL ,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `thing_id` bigint(20) NOT NULL,
+  `address_id` bigint(20) DEFAULT NULL,
+  `location_id` bigint(20) DEFAULT NULL,
+  `email` varchar(1024) DEFAULT NULL,
+  `telephone` varchar(255) DEFAULT NULL,
+  `fax_number` varchar(255) DEFAULT NULL,
+  `interaction_count` varchar(1024) DEFAULT NULL,
+  `founding_date` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 )
 COMMENT='Defined at http://schema.org/Organization'
 ;
+
