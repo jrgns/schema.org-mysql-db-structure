@@ -7,9 +7,6 @@ CREATE TABLE `places` (
   `telephone` varchar(255) DEFAULT NULL,
   `fax_number` varchar(255) DEFAULT NULL,
   `interaction_count` varchar(1024) DEFAULT NULL,
-  `active` tinyint(1) NOT NULL DEFAULT '1',
-  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `added` datetime NOT NULL,
   PRIMARY KEY (`id`)
 )
 COMMENT='Defined at http://schema.org/Place'
